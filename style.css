@@ -97,7 +97,7 @@ body {
 
 #user-score,
 #comp-score {
-    font-size: 5rem;
+    font-size: 6rem;
     color: #1d0a0a;
 
 }
@@ -113,11 +113,13 @@ body {
 }
 
 .playerPoints {
-    margin-top: px;
+    margin-top: 2px;
 
 
 }
-
+pre{
+    font-size: 4px;
+}
 #pla {
     margin-top: 35px;
     height: 150px;
@@ -248,3 +250,102 @@ pre{
     align-items: center;
     margin-right: 40px;
 }
+@media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
+        h1{
+            height: 2rem;
+            line-height: 2rem;
+            font-size: 20px;
+        }
+        :root {
+          --font-size: 14px;
+          --gap: 3rem;
+          --margin-top: 1rem;
+        }
+      
+        .images {
+          height: 150px;
+          margin-top: var(--margin-top);
+        }
+        .msg-container {
+            margin-top: 2.5rem;
+        }
+        
+        #msg {
+            background-color: #40679E;
+            color: #fff;
+            font-size: 0.9rem;
+            display: inline;
+            padding: 1.2rem;
+            border-radius: 1rem;
+        }
+        .images{
+            gap:10px;
+        }
+      
+        #img1,
+        #img2 {
+          height: 150px;
+          width: 150px;
+          margin-top: 2.5rem;
+        }
+      
+        .computer img,
+        .player img {
+          width: 60%;
+        }
+      
+        .points {
+          font-size: 1.0rem;
+          gap: 10px;
+
+        }
+      
+        #user-score,
+        #comp-score {
+          font-size: 2.5rem;
+        }
+      
+        #compy {
+          height: 100px;
+          width: 150px;
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 10px;
+          
+        }
+      
+        #pla {
+          height: 80px;
+          width: 60px;
+          gap: 10px;
+          margin-top:20px;
+        }
+      
+        .options {
+          gap: 10px;
+          margin-top: var(--margin-top);
+        }
+        pre{
+            font-size: 30px;
+            margin-top: 105px;
+        }
+      
+        #stone,
+        #paper,
+        #scissors {
+          height: 100px;
+          width: 100px;
+          gap:10px;
+        }
+      
+        .options button {
+          padding: 0.8rem 1.5rem;
+          font-size: 20px;
+          width: 200px;
+          font-size: 35px;
+        }
+      }
+
+    }
